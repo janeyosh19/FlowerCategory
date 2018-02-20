@@ -1,0 +1,40 @@
+﻿body {
+}
+
+
+.firstphotos {
+    margin-top: 20px;
+    padding: 10px;
+    min-height: 350px;
+    max-width: 100%;
+}
+
+.firstphotos h3 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: rgb(124, 93, 40);
+    }
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 10%;
+}
+
+.first {
+    display: inline-block;
+    background: black;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 55px;
+    margin-top: 5px;
+    border: 2px outset;
+    min-height: 150px;
+    width: 25%;
+    min-width: 210px;
+    max-width: 300px;
+    max-height: 500px;
+}

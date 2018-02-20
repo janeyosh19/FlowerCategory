@@ -1,0 +1,28 @@
+﻿@model WebApplication5.Models.DeliveryData
+@{
+    ViewBag.Title = "Deliverydata";
+}
+
+<h2>Deliverydata</h2>
+
+<div class="jumbotron">
+    <form action="/Home/StoreBook">
+
+
+
+
+        <fieldset>
+            <legend>Delivery information:</legend>
+
+
+            From: <input type="text" name="From"><br>
+            Email: <input type="text" name="Email"><br>
+            ToWhom: <input type="text" name="ToWhom"><br>
+            Address: <input type="text" name="Address"><br>
+            Message: <input type="text" name="Message"><br>
+
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>

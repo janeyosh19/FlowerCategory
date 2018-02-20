@@ -1,0 +1,31 @@
+﻿@model List<WebApplication5.Models.Occasion>
+
+@{
+    ViewBag.Title = "Admin";
+}
+
+<a href="/FlowerAdd">Flower</a>
+<a href="/WrappingAdd">Wrapping</a>
+<a href="/CardAdd">Card</a>
+
+<form action="" method="post">
+    <fieldset>
+        Occasions: <select id="Event" name="Event">
+
+            <option value="Birthday">Birthday</option>
+            <option value="Goodbye">Goodbye</option>
+            <option value="Mother's day<">Mothersday</option>
+            <option value="Wedding">Wedding</option>
+        </select>
+    </fieldset>
+
+    Flower Name <input type="text" name="flowername" />
+    @using (Html.BeginForm("", "home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+       <input type = "file" title="Upload Image" name = "file" />< br />
+        <input type="submit" name="submit" id="Submit" value="Üpload" />
+    }
+
+    <input type="submit" name="submit" id="Submit" value="Submit" />
+   
+</form>

@@ -1,0 +1,24 @@
+﻿@model.List<WebApplication5.Models.Occasion>
+
+@{
+    ViewBag.Title = "CardAdd";
+}
+
+<h2>FlowerAdd</h2>
+
+
+<form action="/StoreCard" method="post" enctype="multipart/form-data">
+    <fieldset>
+        Occasions: <select id="Event" name="Event">
+
+            <option value="Birthday">Birthday</option>
+            <option value="Goodbye">Goodbye</option>
+            <option value="Mother's day<">Mothersday</option>
+            <option value="Wedding">Wedding</option>
+        </select>   
+    </fieldset>
+
+    Card Name <input type="text" name="cardadd" />
+    Upload Image<input id="FlowerImage" type ="file" name="file"/>
+    <input type="submit" name="submit" id="Submit" value="Üpload"/>
+</form>
